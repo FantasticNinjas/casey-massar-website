@@ -1,0 +1,86 @@
+body {
+    padding: 0 0;
+    margin: 0 0;
+    background-color: #F0F0F0;
+}
+
+h1 {
+    font-family: Copperplate;
+    font-size: 68pt;
+    letter-spacing: 3pt;
+    margin-bottom: 5pt;
+}
+
+h2 {
+    margin: 15pt 20pt;
+    font-family: Copperplate;
+    font-size: 48pt;
+    text-align: center;
+}
+
+h3 {
+    font-family: Copperplate;
+    margin-top: 5pt;
+    letter-spacing: 1pt;
+    font-size: 28pt;
+}
+
+#header-container {
+    color: #131313;
+    width: 100%;
+    margin: 0 0;
+}
+
+#header-links {
+    width: 100%;
+    padding: 0px;
+    margin: 0px;
+    list-style-type: none;
+    font-family: Copperplate;
+    font-size: 32pt;
+    text-align: center;
+    display: flex;
+    align-items: stretch;
+}
+
+.header-link {
+    display: table-cell;
+    vertical-align: middle;
+    flex: 1 100%;
+}
+
+.section-shaddow {
+    box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.2), 0 0 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.header-link h4 {
+    margin: 14pt;
+}
+
+#header-logo {
+    width: 50pt;
+    padding: 0pt;
+}
+
+#logo-link {
+    flex: 1 1;
+    padding: 6pt 15pt 0pt 15pt;
+}
+
+#main-title-section {
+    width: 100%;
+    overflow: auto;
+    background-color: #131313;
+    color: #F0F0F0;
+    font-family: Copperplate;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#projects-section {
+    width: 100%;
+    overflow: auto;
+    color: #131313;
+}

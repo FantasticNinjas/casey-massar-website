@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<head>
+    <title>Casey Massar</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/fonts.css">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+</head>
+
+<body onload="setSizes()" onresize="setSizes()">
+    <script>
+        function setSizes() {
+            var displayHeight = document.documentElement.clientHeight
+            document.getElementById("main-title-section").style.height = (displayHeight * 4/5 - document.getElementById("header-container").clientHeight).toString() + "px"
+            document.getElementById("projects-section").style.minHeight = (displayHeight * 1 / 2).toString() + "px"
+        }
+    </script>
+    <div id="header-container">
+        <ul id="header-links">
+            <li class="header-link" id="logo-link"><img src="rec/logo-hero.svg" id="header-logo" /></li>
+            <li class="header-link"><h4>Projects</h4></li>
+            <li class="header-link"><h4>Resume</h4></li>
+            <li class="header-link"><h4>Contact</h4></li>
+        </ul>
+    </div>
+    
+    <div id="main-title-section" class="section-shaddow">
+        <div id="main-title">
+            <h1>Casey Massar</h1>
+            <h3>Engineer • Developer • Artist</h3>
+        </div>
+    </div>
+    <div id="projects-section">
+        <h2 class="section-title">Projects</h2>
+    </div>
+</body>
