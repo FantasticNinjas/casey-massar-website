@@ -2,6 +2,7 @@ body {
     padding: 0 0;
     margin: 0 0;
     background-color: #F0F0F0;
+    color: #131313;
 }
 
 h1 {
@@ -14,7 +15,7 @@ h1 {
 h2 {
     margin: 15pt 20pt;
     font-family: Copperplate;
-    font-size: 48pt;
+    font-size: 44pt;
     text-align: center;
 }
 
@@ -23,6 +24,19 @@ h3 {
     margin-top: 5pt;
     letter-spacing: 1pt;
     font-size: 28pt;
+}
+
+h4 {
+    margin: 1pt 2pt;
+    font-family: Copperplate;
+    font-size: 24pt;
+    letter-spacing: 1pt;
+    text-align: center;
+}
+
+.dark {
+    background-color: #131313;
+    color: #F0F0F0;
 }
 
 #header-container {
@@ -50,11 +64,25 @@ h3 {
 }
 
 .section-shaddow {
-    box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.2), 0 0 20px 0 rgba(0, 0, 0, 0.19);
+    box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.3), 0 0 20px 0 rgba(0, 0, 0, 0.2);
 }
 
 .header-link h4 {
     margin: 14pt;
+}
+
+.thumb {
+    width: 100%;
+}
+
+.project {
+    width: 280pt;
+    margin: 20pt;
+    padding: 1pt;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 #header-logo {
@@ -70,9 +98,6 @@ h3 {
 #main-title-section {
     width: 100%;
     overflow: auto;
-    background-color: #131313;
-    color: #F0F0F0;
-    font-family: Copperplate;
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -82,5 +107,11 @@ h3 {
 #projects-section {
     width: 100%;
     overflow: auto;
-    color: #131313;
+}
+
+#projects-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
 }
