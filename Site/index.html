@@ -11,7 +11,16 @@
         function setSizes() {
             var displayHeight = document.documentElement.clientHeight
             document.getElementById("main-title-section").style.minHeight = (displayHeight * 3/4 - document.getElementById("header-container").clientHeight).toString() + "px"
-            document.getElementById("projects-section").style.minHeight = (displayHeight * 1 / 2).toString() + "px"
+            document.getElementById("projects-section").style.minHeight = (displayHeight * 1).toString() + "px"
+        }
+        
+        function toggleVisible(id) {
+            var currentElement = document.getElementById(id)
+            if(currentElement.style.display == "none") {
+                currentElement.style.display = "inherit"
+            } else {
+                currentElement.style.display = "none"
+            }
         }
     </script>
     <div id="header-container">
@@ -65,13 +74,31 @@
         </div>
     </div>
     <div id="resume-section" class="section-shaddow dark">
-        <h2 class="section-title">Resume</h2> 
+        <h2 class="section-title">Resume</h2>
         <div id="resume-split-container">
             <div id="resume-description">
                 <p>Thank you for your interest. I have two versions of my resume; one geared toward embeded systems and firmware development and the other toward software development in general. Please select whichever one better describes what you're looking for.</p>
             </div>
             <div id="resume-links">
+                <a onclick="toggleVisible('resume-embeded-links')">Embedded Software Resume</a>
+                <br />
+                <div id="resume-embeded-links" class="link-subsection">
+                    <a>Web</a>
+                    <br />
+                    <a>PDF</a>
+                </div>
+                <a onclick="toggleVisible('resume-general-links')">General Software Resume</a>
+                <div id="resume-general-links" class="link-subsection">
+                    <a>Web</a>
+                    <br />
+                    <a>PDF</a>
+                </div>
             </div>
         </div>
+    </div>
+    <div id="contact-section">
+        <h2 class="section-title">Contact</h2>
+        <p>Email (prefered): <a href="mailto:caseymassar@gmail.com">caseymassar@gmail.com</a></p>
+        <p>phone: <a href="tel:1-(617)-583-3865">+1 (617)-583-3865</a></p>
     </div>
 </body>

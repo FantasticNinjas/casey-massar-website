@@ -1,4 +1,26 @@
 @font-face {
     font-family: Copperplate;
-    src: url("COPRGTB.TTF");
+    src: url("ttf/COPRGTB.ttf");
+}
+
+@font-face {
+    font-family: AvenirLT;
+    src: url("ttf/AvenirLTStd-Roman.otf");
+}
+
+@font-face {
+    font-family: AvenirLT;
+    font-weight: 300;
+    src: url("ttf/AvenirLTStd-Book.otf");
+}
+
+@font-face {
+    font-family: AvenirLT;
+    font-weight: 700;
+    src: url("ttf/AvenirLTStd-Medium.otf");
+}
+
+@font-face {
+    font-family: Colonna;
+    src: url("ttf/COLONNA.ttf");
 }
