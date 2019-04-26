@@ -4,6 +4,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="css/fonts.css">
     <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="stylesheet" type="text/css" href="css/mobile.css" media="screen and (max-width:500px)">
 </head>
 
 <body onload="setSizes()" onresize="setSizes()">
@@ -11,15 +12,14 @@
         function setSizes() {
             var displayHeight = document.documentElement.clientHeight
             document.getElementById("main-title-section").style.minHeight = (displayHeight * 3/4 - document.getElementById("header-container").clientHeight).toString() + "px"
-            document.getElementById("projects-section").style.minHeight = (displayHeight * 1).toString() + "px"
         }
         
         function toggleVisible(id) {
             var currentElement = document.getElementById(id)
-            if(currentElement.style.display == "none") {
-                currentElement.style.display = "inherit"
-            } else {
+            if(currentElement.style.display == "inherit") {
                 currentElement.style.display = "none"
+            } else {
+                currentElement.style.display = "inherit"
             }
         }
     </script>
@@ -49,12 +49,12 @@
             
             <div class="project section-shaddow dark">
                 <h4>Floppy Drive Music</h4>
-                <img src="rec/bike-thumb.jpg" class="thumb" />
+                <img src="rec/floppy-thumb.jpg" class="thumb" />
             </div>
             
              <div class="project section-shaddow dark">
                 <h4>Automatic Podcast Editor</h4>
-                <img src="rec/bike-thumb.jpg" class="thumb" />
+                <img src="rec/waveform-thumb.jpg" class="thumb" />
             </div>
             
              <div class="project section-shaddow dark">
@@ -64,12 +64,12 @@
             
              <div class="project section-shaddow dark">
                 <h4>MatLab Scripts</h4>
-                <img src="rec/bike-thumb.jpg" class="thumb" />
+                <img src="rec/matlab-thumb.jpg" class="thumb" />
             </div>
             
             <div class="project section-shaddow dark">
                 <h4>Website Source</h4>
-                <img src="rec/bike-thumb.jpg" class="thumb" />
+                <img src="rec/source_thumb.jpg" class="thumb" />
             </div>
         </div>
     </div>
