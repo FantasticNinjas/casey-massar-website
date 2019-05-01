@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<head>
+    <title>Casey Massar</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../css/fonts.css">
+    <link rel="stylesheet" type="text/css" href="../css/main.css">
+</head>
+
+<body>
+    <script>
+    </script>
+    <div id="header-container">
+        <div id="header-links">
+            <a class="header-link shaddow-link" id="logo-link" href="../index.html"><img src="../rec/logo-hero.svg" id="header-logo" /></a>
+            <a class="header-link shaddow-link" href="../projects.html"><h4>Projects</h4></a>
+            <a class="header-link shaddow-link" href="../about.html"><h4>About Me</h4></a>
+            <a class="header-link shaddow-link"><h4>Resume/Contact</h4></a>
+        </div>
+    </div>
+
+    <div class="section dark section-shaddow center-contents">
+        <div class="text-area">
+            <h1>Musical Floppy Drives</h1>
+
+            <p>A pair of unassuming floppy drives, a few cables, and a big red button. When the button is pressed, the floppy drives jump into action, playing a <a>rather fitting tune</a>.</p>
+            <p>As strange and impressive as this project is (especially in person), the principal behind it is actually pretty simple. Data on a floppy disk is stored in rings (called tracks). A floppy drive spins the disk in order to move along a track and uses a stepper motor to move the head back and forth in order to switch between tracks. It is this stepper motor that produces the music. Each time the stepper motor steps it produces a soft click (a sound you will be familiar with if you've ever owned a computer with a floppy drive). Step the motor fast enough and those clicks blend together to form a tone.</p>
+            <p>This project uses one of the timer/counter units on an AVR microcontroller to step the motor in each floppy drive at a precicely controlled frequency. It adjusts the frequency of each drive according to a pre-programmed sequence, producing a song. My source code can be downloaded at the bottom of the page.</p>
+            <b>Materials used on this project:</b>
+            <ul>
+                <li><a>Atmel ATmega328p Xplained Mini dev board</a></li>
+                <li>2 3 &frac12; floppy drives</li>
+                <li>ATX power supply (A full ATX power supply is not really necessary for this, any 5V power supply will do. But I had this lying around and it already had the connectors for floppy drives.)</li>
+                <li>Jumper wires</li>
+            </ul>
+            <p>Credit where credit's due, I am not the first person to build musical floppy drives. As far as I have been able to dissern, that title goes to YouTube user <a href="https://www.youtube.com/user/Sammy1Am">Sammy1Am</a>. However, the code linked here is entirely my own. </p>
+        </div>
+    </div>
+</body>

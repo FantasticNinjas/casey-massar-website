@@ -2,9 +2,8 @@
 <head>
     <title>Casey Massar</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="css/fonts.css">
-    <link rel="stylesheet" type="text/css" href="css/main.css">
-    <link rel="stylesheet" type="text/css" href="css/mobile.css" media="screen and (max-width:500px)">
+    <link rel="stylesheet" type="text/css" href="./css/fonts.css">
+    <link rel="stylesheet" type="text/css" href="./css/main.css">
 </head>
 
 <body onload="setSizes()" onresize="setSizes()">
@@ -12,6 +11,13 @@
         function setSizes() {
             var displayHeight = document.documentElement.clientHeight
             document.getElementById("main-title-section").style.minHeight = (displayHeight * 3/4 - document.getElementById("header-container").clientHeight).toString() + "px"
+            document.getElementById("projects-section").style.minHeight = displayHeight + "px"
+        }
+        
+        function jumpTo(id) {
+            document.getElementById(id).scrollIntoView({ 
+                behavior: 'smooth' 
+            });
         }
         
         function toggleVisible(id) {
@@ -22,55 +28,55 @@
                 currentElement.style.display = "inherit"
             }
         }
+        
     </script>
     <div id="header-container">
-        <ul id="header-links">
-            <li class="header-link" id="logo-link"><img src="rec/logo-hero.svg" id="header-logo" /></li>
-            <li class="header-link"><h4>Projects</h4></li>
-            <li class="header-link"><h4>About Me</h4></li>
-            <li class="header-link"><h4>Resume</h4></li>
-            <li class="header-link"><h4>Contact</h4></li>
-        </ul>
+        <div id="header-links">
+            <a class="header-link" id="logo-link"><img src="rec/logo-hero.svg" id="header-logo" /></a>
+            <a class="header-link" onclick="jumpTo('projects-section')"><h4>Projects</h4></a>
+            <a class="header-link"><h4>About Me</h4></a>
+            <a class="header-link" onclick="jumpTo('resume-section')"><h4>Resume/Contact</h4></a>
+        </div>
     </div>
     
     <div id="main-title-section" class="section-shaddow dark">
         <div id="main-title">
             <h1>Casey Massar</h1>
-            <h3>Engineer • Developer • Artist</h3>
+            <h3>Engineer &#x25cf; Developer &#x25cf; Artist</h3>
         </div>
     </div>
     <div id="projects-section">
         <h2 class="section-title">Projects</h2>
         <div id="projects-container">
-            <div class="project section-shaddow dark">
+            <a class="project section-shaddow dark">
                 <h4>Pedelec</h4>
-                <img src="rec/bike-thumb.jpg" class="thumb" />
-            </div>
+                <img src="./rec/bike-thumb.jpg" class="thumb" />
+            </a>
             
-            <div class="project section-shaddow dark">
+            <a class="project section-shaddow dark" href="project/FloppyDrives.html">
                 <h4>Floppy Drive Music</h4>
                 <img src="rec/floppy-thumb.jpg" class="thumb" />
-            </div>
+            </a>
             
-             <div class="project section-shaddow dark">
-                <h4>Automatic Podcast Editor</h4>
+             <a class="project section-shaddow dark">
+                <h4>Podcast Editor</h4>
                 <img src="rec/waveform-thumb.jpg" class="thumb" />
-            </div>
+            </a>
             
-             <div class="project section-shaddow dark">
+             <a class="project section-shaddow dark">
                 <h4>Dynamic Map</h4>
                 <img src="rec/bike-thumb.jpg" class="thumb" />
-            </div>
+            </a>
             
-             <div class="project section-shaddow dark">
+             <a class="project section-shaddow dark">
                 <h4>MatLab Scripts</h4>
                 <img src="rec/matlab-thumb.jpg" class="thumb" />
-            </div>
+            </a>
             
-            <div class="project section-shaddow dark">
+            <a class="project section-shaddow dark">
                 <h4>Website Source</h4>
                 <img src="rec/source_thumb.jpg" class="thumb" />
-            </div>
+            </a>
         </div>
     </div>
     <div id="resume-section" class="section-shaddow dark">
@@ -98,7 +104,7 @@
     </div>
     <div id="contact-section">
         <h2 class="section-title">Contact</h2>
-        <p>Email (prefered): <a href="mailto:caseymassar@gmail.com">caseymassar@gmail.com</a></p>
-        <p>phone: <a href="tel:1-(617)-583-3865">+1 (617)-583-3865</a></p>
+        <p>Email (prefered): <a  class="shaddow-link" href="mailto:caseymassar@gmail.com">caseymassar@gmail.com</a></p>
+        <p>phone: <a class="shaddow-link" href="tel:1-(617)-583-3865">+1 (617)-583-3865</a></p>
     </div>
 </body>
